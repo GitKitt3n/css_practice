@@ -1,0 +1,67 @@
+body {
+  background-color: #fcf5fa;
+}
+
+/*Buttons*/
+button {
+  font-size: 40px;
+  background-color: #efd3d7;
+}
+
+#signup {
+  background-color: #85768f;
+  color: #feeafa;
+}
+
+/*headers*/
+h1,
+h2 {
+  /*With comma means AND, without comma means DESCENDANT*/
+  color: #908eaf;
+}
+
+/*Tags*/
+
+span {
+  color: #adb5bd;
+}
+
+.tag {
+  background-color: #dee2ff;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+/*Links*/
+
+footer a {
+  /*anchor nested within footer*/
+  color: #cf86f3;
+}
+
+/*Combinator/ Adjacent Selector*/
+
+/*Selects element(s) that are immediately preceded by another element*/
+
+h2 + button {
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*Direct Child*/
+/*Selects elemets that are direct childs of an element*/
+
+footer > a {
+  color: #8d0f7c;
+}
+
+/*Attribute Selector*/
+/*used to select an element with some specific attribute or attribute value.*/
+
+input[type="password"] {
+  color: #ceb4b8;
+}
+
+section.post {
+  /*Selects sections with a class of post*/
+}
