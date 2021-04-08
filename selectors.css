@@ -17,7 +17,7 @@ button {
 h1,
 h2 {
   /*With comma means AND, without comma means DESCENDANT*/
-  color: #908eaf;
+  color: #735d78;
 }
 
 /*Tags*/
@@ -37,11 +37,17 @@ span {
 footer a {
   /*anchor nested within footer*/
   color: #cf86f3;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Combinator/ Adjacent Selector*/
 
-/*Selects element(s) that are immediately preceded by another element*/
+/*Selects element(s) that are immediately preceded by 
+another element*/
 
 h2 + button {
   font-size: 10px;
@@ -55,13 +61,48 @@ footer > a {
   color: #8d0f7c;
 }
 
+/*Selects sections with a class of post
+sections.post*/
+
 /*Attribute Selector*/
-/*used to select an element with some specific attribute or attribute value.*/
+/*used to select an element with some specific attribute or 
+attribute value.*/
 
 input[type="password"] {
   color: #ceb4b8;
 }
 
-section.post {
-  /*Selects sections with a class of post*/
+span[name*="poster"] {
+  color: #d62839; /*why is only the color changing, but the weight changes in both areas?*/
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Pseudo Classes--- keyword added to selector to 
+specify a special state of the element*/
+
+.post button:hover {
+  background-color: #e0afa0;
+  color: #f4f3ee;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post button:active {
+  background-color: #e8c2ca;
+}
+
+/*.post:nth-of-type(3) { Selects the 3rd of the class
+  background-color: #fae0e4;
+}*/
+
+.post:nth-of-type(3n) {
+  /*Selects every other 3rd of the class*/
+  background-color: #fae0e4;
+}
+
+.post button:nth-of-type(3n) {
+  /*Why color not changing?*/
+  background-color: #bd6381;
 }
