@@ -106,3 +106,17 @@ specify a special state of the element*/
   /*Why color not changing?*/
   background-color: #bd6381;
 }
+
+/*Puesdo Elements*/
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::first-line {
+  color:#8d0f7c;
+
+}
+
+p::selection {
+  background-color: #d091d6;
+}
