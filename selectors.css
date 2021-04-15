@@ -114,4 +114,20 @@ specify a special state of the element*/
   background-color: #bd6381;
 }
 
+<<<<<<< HEAD
 /*play with nth-of-child and first/last-of-child*/
+=======
+/*Puesdo Elements*/
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::first-line {
+  color:#8d0f7c;
+
+}
+
+p::selection {
+  background-color: #d091d6;
+}
+>>>>>>> c3f2a1199cce75214547323a894152ab3ec0bd9e
