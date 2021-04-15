@@ -34,14 +34,15 @@ span {
 
 /*Links*/
 
-footer a {
-  /*anchor nested within footer*/
-  color: #cf86f3;
-  text-decoration: underline;
-}
-
 a {
   text-decoration: none;
+  color: rgb(164, 0, 230);
+}
+
+footer a {
+  /*anchor nested within footer*/
+  color: #ff6262;
+  text-decoration: underline;
 }
 
 /*Combinator/ Adjacent Selector*/
@@ -76,6 +77,8 @@ span[name*="poster"] {
   color: #d62839; /*why is only the color changing, but the weight changes in both areas?*/
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+span[name*="poster"] a {
+}
 
 /*Pseudo Classes--- keyword added to selector to 
 specify a special state of the element*/
@@ -102,7 +105,13 @@ specify a special state of the element*/
   background-color: #fae0e4;
 }
 
-.post button:nth-of-type(3n) {
-  /*Why color not changing?*/
+.post:nth-of-type(3n) button {
+  /*Why color not changing?*
+  Answer: nth of type looks for every third thing of whichever 
+  element it's attached to. Looks for how many are immediately next to each other/ sharing 
+  same parent. Then applying every rule. Old code put on button, then looked at parent, 
+  but there was only one button in parent. /
   background-color: #bd6381;
 }
+
+/*play with nth-of-child and first/last-of-child*/
