@@ -130,3 +130,30 @@ p::selection {
 ::selection {
   background: #d091d6; /*applies to whole document*/
 }
+
+/* @media (min-width: 800px) {
+  h1 {
+    color: #1e1520;
+  }
+} */
+/*Rainbow*/
+
+@media (max-width: 1500px) {
+  h1 {
+    color: #f4f800;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    color: #f88400;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    color: #d62839;
+  }
+}
+
+/*does media have to me under the element it's modifying?*/
